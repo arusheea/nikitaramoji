@@ -15,7 +15,7 @@ $(document).ready(function(){
         	$(this).addClass('notactive');
 		});
 	    $('.full-pg').each(function() {
-	        if($(window).scrollTop() >= $(this).offset().top - 50 && $(window).scrollTop() <= $(this).offset().top + 50) {
+	        if($(window).scrollTop() >= $(this).offset().top - 100 && $(window).scrollTop() <= $(this).offset().top + 100) {
 	            var id = $(this).attr('id');
 	            $("#"+id.substr(0,id.length-2)+"link").addClass('activelink');
 	            $("#"+id.substr(0,id.length-2)+"link").removeClass('notactive');
